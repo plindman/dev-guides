@@ -333,13 +333,15 @@ Ensure `.env` is present in your `.gitignore`. This prevents accidental check-in
 
 ### 6.2 Security Analysis
 
-*   We use `Bandit` to identify common security vulnerabilities in our Python code. It is configured to run automatically via `pre-commit` hooks.
+*   We use `Bandit` to identify common security vulnerabilities in our Python code.
+*   We configure it to run automatically via `pre-commit` hooks. Use template (https://github.com/plindman/dev-guides/blob/main/python/templates/.pre-commit-config.yaml)
 *   You can also run `Bandit` manually:
     ```bash
     uv add --dev bandit # Only needed once to add bandit as a dev dependency
     uv run bandit -r src/
     ```
     *Review any reported issues and address them as necessary. False positives can be marked for exclusion in a `.bandit` file or with inline comments.*
+*   Bandit Getting started here: https://bandit.readthedocs.io/en/latest/start.html
 
 ## 7. Documentation
 
