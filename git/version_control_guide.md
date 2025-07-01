@@ -67,6 +67,15 @@ Example:
 fix: handle empty user input in login
 ```
 
+If you run into issues with commit messages quoting, try alternatives:
+
+``` bash
+git commit -m "feat: add user login flow"
+git commit -m \"feat: add user login flow\"
+git commit -m 'feat: add user login flow'
+# or use temp commit msg file
+```
+
 ### ✅ Merging Tips
 
 * Prefer small, focused branches to avoid conflicts.
