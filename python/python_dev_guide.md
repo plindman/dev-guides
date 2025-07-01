@@ -164,11 +164,11 @@ Do not add these tools to the production dependencies.
 
 *   **All new code must include type hints.**
 *   Existing code should be updated with type hints as part of refactoring or feature work.
-*   Type checking is performed automatically via `pre-commit` hooks using `mypy` (or `ty` if configured).
-*   You can also run `ty` manually to check type correctness (add `ty` as a dev dependency via `uv add --dev ty`):
+*   You can run `ty` manually to check type correctness (add `ty` as a dev dependency via `uv add --dev ty`):
     ```bash
     uv run ty check src/
     ```
+*   Fallback to `mypy` via `pre-commit` hooks if `ty` doesn't work. 
 
 ### 4.6. Pre-commit Hooks for Automated Checks
 
