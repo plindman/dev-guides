@@ -9,9 +9,25 @@ It includes setup instructions, workflows, coding standards, and tooling choices
 ## Structure
 
 - `python/` – Python development standards, tooling, testing, and configuration
+- `js/` – JavaScript-related guides (to be expanded)
 - `git/` – Git workflow, commit practices, and merge strategies
 - `templates/` – Reusable configs like `.gitignore` or pre-commit setup
-- `js/` – JavaScript-related guides (to be expanded)
+
+```
+dev-guides/
+├── README.md                 # Overview and purpose of the repo
+├── License                   # License info
+├── python/
+│   └── python_dev_guide.md   # Python-specific practices
+├── git/
+│   └── version_control_guide.md  # Git and version control
+├── templates/
+│   ├── .pre-commit-config.yaml
+│   └── .gitignore
+└── js/                       # (optional placeholder for later)
+    ├── frontend.md
+    └── backend.md
+```
 
 ## Usage
 
