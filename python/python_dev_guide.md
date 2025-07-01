@@ -22,7 +22,9 @@ This project utilizes `uv` for efficient dependency management and environment s
 
 Understanding the project's layout is crucial for effective contribution. A typical Python project structure often looks like this:
 
+```
 .
+├── README.md                     # General project overview and quick start guide
 ├── main.py                       # Main application entry point
 ├── src/                          # Source code for the application
 │   ├── __init__.py               # Makes 'src' a Python package
@@ -39,12 +41,12 @@ Understanding the project's layout is crucial for effective contribution. A typi
 ├── .gitignore                    # Specifies files/directories to ignore in Git
 ├── .env.example                  # Example of environment variables (without sensitive data)
 ├── pyproject.toml                # Project metadata, dependencies, and tool configurations (e.g., ruff, pytest)
-├── README.md                     # General project overview and quick start guide
 ├── CONTRIBUTING.md               # Detailed contribution guidelines
 ├── CODE_OF_CONDUCT.md            # Community code of conduct
-├── GEMINI.md                     # This detailed development guide
+├── DEVELOPMENT.md                # Detailed development guide how to use these guidelines in the project
 └── PLAN.md                       # Development plan specific for this project
- 
+ ```
+
 ### Flexible Project Structure
 
 **Standard Web API Project:**
