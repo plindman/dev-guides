@@ -69,25 +69,30 @@ Understanding the project's layout is crucial for effective contribution. A typi
 ### Flexible Project Structure
 
 **Standard Web API Project:**
+```
 src/
 ├── api/           # API routes and endpoints
 ├── core/          # Business logic, domain models
 ├── db/            # Database models, migrations
 ├── services/      # External service integrations
 └── utils/         # Shared utilities
-
+```
 **CLI Tool Project:**
+```
 src/
 ├── commands/      # CLI command implementations
 ├── core/          # Core functionality
 └── utils/         # Shared utilities
+```
 
 **Data Processing Project:**
+```
 src/
 ├── processors/    # Data transformation logic
 ├── models/        # Data models and schemas
 ├── io/           # Input/output handlers
 └── utils/         # Shared utilities
+```
 
 Adapt structure to your domain - the key is logical separation and clear naming.
 
