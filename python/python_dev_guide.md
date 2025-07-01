@@ -18,6 +18,25 @@ This project utilizes `uv` for efficient dependency management and environment s
 
 * Only add dependencies you really need at the moment for the app. Do not add dependencies in advance. Always ask before adding new dependencies.
 
+### 1.1 Dependency Categories and Pinning Strategy
+
+**Production Dependencies:**
+- Pin exact versions for critical infrastructure: fastapi==0.104.1
+- Use compatible release for stable libraries: pydantic~=2.5.0 (allows 2.5.x)
+- Avoid loose pins for security-sensitive packages: cryptography>=41.0.0,<42.0.0
+
+**Development Dependencies:**
+- Can be more flexible with versions: pytest>=7.0.0
+- Pin exact versions for formatting/linting tools to ensure consistency: ruff==0.1.6
+- Test runners can use compatible release: pytest~=7.4.0
+
+**Handling Dependency Conflicts & Prevention Strategies**
+- Use `uv tree` to visualize dependency relationships
+- Regularly audit dependencies with `uv list --outdated`
+- Pin problematic transitive dependencies when necessary
+- Identify the conflict: `uv sync` will show conflicting requirements
+- Analyze dependencies: Use `uv tree` to understand the dependency chain
+
 ## 2. Python Project Structure
 
 Understanding the project's layout is crucial for effective contribution. A typical Python project structure often looks like this:
