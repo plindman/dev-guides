@@ -297,7 +297,7 @@ Ensure `.env` is present in your `.gitignore`. This prevents accidental check-in
 
 * **User Documentation:** Any changes to user-facing functionality should be reflected in the `docs/` directory.
 
-## 6. When to Deviate from Guidelines
+## 8. When to Deviate from Guidelines
 
 These guidelines optimize for most scenarios but aren't absolute rules:
 
