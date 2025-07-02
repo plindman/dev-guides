@@ -307,7 +307,7 @@ For more detailed guidance on using Playwright with Python, refer to the officia
 **Install Playwright and its CLI:**
 
    ```bash
-   uv add --dev playwright
+   uv add --dev pytest-playwright
    playwright install
    ```
 
