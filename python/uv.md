@@ -37,6 +37,13 @@ uv --help
 uv add --help
 ```
 
+## 🛠 Tool Management
+
+```bash
+⚠️ Note: Prefer uv add -d <tool> with version pins for better control and team consistency.
+Tools added via uv tool are not recorded in pyproject.toml or uv.lock.
+```
+
 ## 🔗 Links
 
 * Docs: [https://astral.sh/docs/uv](https://astral.sh/docs/uv)
