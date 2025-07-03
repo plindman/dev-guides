@@ -15,11 +15,12 @@ uv init                # Initialize pyproject.toml and .venv
 uv sync                # Sync deps from pyproject.toml
 ```
 
-## 🚀 Add Packages
+## 🚀 Add / Remove Packages
 
 ```bash
 uv add <pkg>           # Add runtime dependency
 uv add -d <pkg>        # Add development dependency
+uv remove <pkg>        # Remove a package
 ```
 
 ## ▶️ Run 
